@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg: #0f0e0c;
+  --bg2: #1a1814;
+  --bg3: #242018;
+  --card: #1e1c17;
+  --border: #2e2b22;
+  --accent: #e8a045;
+  --accent2: #c97b2a;
+  --accent-glow: rgba(232, 160, 69, 0.15);
+  --text: #f0ead6;
+  --text2: #a09880;
+  --text3: #6b6455;
+  --green: #4caf7d;
+  --red: #e05c5c;
+  --radius: 14px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+[data-theme="light"] {
+  --bg: #faf8f4;
+  --bg2: #f2ede4;
+  --bg3: #ebe4d8;
+  --card: #ffffff;
+  --border: #ddd5c4;
+  --accent: #c97b2a;
+  --accent2: #a86320;
+  --accent-glow: rgba(201, 123, 42, 0.12);
+  --text: #1a1610;
+  --text2: #6b5e4a;
+  --text3: #9c8c78;
+  --green: #2d8a5e;
+  --red: #c94040;
+  --shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
+input { font-family: 'DM Sans', sans-serif; }
+a { text-decoration: none; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

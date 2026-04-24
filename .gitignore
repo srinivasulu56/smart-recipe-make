@@ -1,0 +1,11 @@
+# In your smart-recipe-maker root folder
+# Create a file called .gitignore with this content:
+
+venv/
+__pycache__/
+*.pyc
+.env
+db.sqlite3
+staticfiles/
+node_modules/
+dist/
